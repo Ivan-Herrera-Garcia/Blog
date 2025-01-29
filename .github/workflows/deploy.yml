@@ -24,7 +24,7 @@ jobs:
           deno-version: v2.x
 
       - name: Build step
-        run: "deno --allow-net main.ts"
+        run: "deno run --allow-net main.ts"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
