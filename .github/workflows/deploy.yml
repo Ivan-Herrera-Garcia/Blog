@@ -24,13 +24,13 @@ jobs:
           deno-version: v2.x
 
       - name: Build step
-        run: "deno --allot-net main.ts"
+        run: "deno --allow-net main.ts"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "backend-blog-deno"
-          entrypoint: "backend-blog-deno"
+          project: "backend-spam"
+          entrypoint: "Blog/main.ts"
           root: ""
           
           
